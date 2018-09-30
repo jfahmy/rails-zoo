@@ -1,0 +1,15 @@
+<%= form_with model: @animal do |f| %>
+  <h1> <%=action_name %></h1>
+   <p> Give us some Animal info: </p>
+
+   <%= f.label :name %>
+   <%= f.text_field :name %>
+
+   <%= f.label :species %>
+   <%= f.text_field :species %>
+
+   <%= f.label :age %>
+   <%= f.text_field :age%>
+
+   <%= f.submit button_title %>
+<% end %>
